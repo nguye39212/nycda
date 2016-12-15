@@ -9,16 +9,16 @@ function subtract(num1, num2){
 }
 
 // use subtract functon
-var b=(12-2)
+var b= subtract(12, 2);
 
-var c = add(a,b)
+var c = add(a,b);
 
 function divide(num1, num2){
 	return num1/num2
 }
 
 // use divide method
-var y=(80/12)
+var y= divide (80, 12)
 
 function multiply(num1, num2){
 	return num1*num2

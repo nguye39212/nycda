@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script 
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+	</script>
+	<script src="clock.js"></script>
+	<link rel="stylesheet" href="clock.css">
+	<title>Clock Workshop</title>
+</head>
+<body>
+
+<script>
+function startTime() {
+    var today = new Date();
+    var hour = today.getHours();
+    var minute = today.getMinutes();
+    var second = today.getSeconds();
+    minute = checkTime(minute);
+    second = checkTime(second);
+    document.getElementById('txt').innerHTML =
+    hour + ":" + minute + ":" + second;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  
+    return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+
+<h1 id="txt"></h1>
+
+</body>
+</html>

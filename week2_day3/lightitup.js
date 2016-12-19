@@ -11,3 +11,5 @@ function seeRed(e) {
     var selectedElement = cellElements[randomNumber]
    selectedElement.style.background="#ff0000 ";
 }
+
+// seeRed(event);

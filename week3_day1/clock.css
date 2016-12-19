@@ -1,0 +1,11 @@
+h1 {
+    font-size: 80px;
+}
+
+.txt{
+  height:90px;
+  width:90px;
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}

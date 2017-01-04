@@ -37,7 +37,7 @@ var yourMom = new Adult ('Kate', 27, 'some job');
 var yourKid = new Child ('Alizne', 0, 'toy');
 var childObj = new Child ('Nathaniel', 8, 'race car')
 // pass in the objects as arguments so that your example works!
-var jimmysFamily = new Family(yourDad, yourMom, kids[]);
+var jimmysFamily = new Family(yourDad, yourMom, [yourKid]);
 
 Family.addNewChild(childObj);
 //jimmysFamily.dad
